@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wangeditor</title>
+</head>
+<body>
+
+<div id="wangeditor" style="margin:20px auto; width:1200px"></div>
+
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="//unpkg.com/wangeditor/release/wangEditor.min.js"></script>
+
+<script type="text/javascript">
+    var E = window.wangEditor;
+    var editor = new E('#wangeditor');
+    editor.customConfig.uploadImgServer = '/upload';
+    editor.customConfig.uploadFileName = "file";
+    editor.create()
+</script>
+
+
+</body>
+</html>

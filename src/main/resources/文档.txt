@@ -1,0 +1,9 @@
+在服务器Nginx中配置图片服务器
+    1、找到nginx.conf
+    2、在nginx.conf中添加下面代码（网页是http在http｛｝中添加。https在https｛｝中添加）
+        server {
+            listen       80;
+            server_name  127.0.0.1;
+            location / {
+            root   /erp_img/imgs/;
+        }
